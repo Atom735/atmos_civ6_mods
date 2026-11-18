@@ -1,0 +1,32 @@
+"workshopitem"
+{
+	"appid"				"289070"
+	"publishedfileid"	"3842173946"
+	"contentfolder"		"/Users/atom735/gits/atmos_civ6_mods/atmos_human_start_boost"
+	"visibility"		"2"
+	"title"				"Atmos: Human Start Boost"
+	"description"		"[h1]Atmos: Human Start Boost[/h1]
+Configurable human-only sight, movement and starting units for Civilization VI.
+
+[h2]Replaces[/h2]
+[list]
+[*]Extra Starting Settler (Human Players Only)
+[*]Sight Enhance
+[*]Move +2 (Human Only)
+[*]Player's first settler grants +N movement/+N Sight
+[/list]
+
+[h2]Advanced Setup defaults[/h2]
+[list]
+[*]Sight +2
+[*]Movement +2
+[*]+1 Settler, +1 Builder, +2 Scouts, +0 Warriors
+[/list]
+
+Human players only. Respects unique unit replacements (e.g. Cree Okihtcitaw instead of Scout).
+[b]Disable the old similar mods or bonuses will stack.[/b]
+
+[h2]RU[/h2]
+Настраиваемые бонусы обзора, хода и стартовых юнитов только для человека. Замена Sight/Move/Settler-модов."
+	"changenote"		"Metadata + content refresh"
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="d6b0233b-dcce-4f9e-ba68-ccdb29701c19" version="2">
+  <Properties>
+    <Name>LOC_ATM_HSB_MOD_NAME</Name>
+    <Description>LOC_ATM_HSB_MOD_DESCRIPTION</Description>
+    <Teaser>LOC_ATM_HSB_MOD_TEASER</Teaser>
+    <Authors>LOC_ATM_HSB_MOD_AUTHORS</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+  </Properties>
+
+  <LocalizedText>
+    <Text id="LOC_ATM_HSB_MOD_NAME">
+      <en_US>Atmos: Human Start Boost</en_US>
+      <ru_RU>Atmos: Стартовый буст (человек)</ru_RU>
+      <zh_Hans_CN>Atmos：人类开局增强</zh_Hans_CN>
+      <zh_Hant_HK>Atmos：人類開局增強</zh_Hant_HK>
+    </Text>
+    <Text id="LOC_ATM_HSB_MOD_TEASER">
+      <en_US>Configurable human-only sight, movement and starting units. Replaces Sight/Move/Settler boost mods.</en_US>
+      <ru_RU>Настраиваемые бонусы обзора, хода и стартовых юнитов только для человека. Замена Sight/Move/Settler-модов.</ru_RU>
+      <zh_Hans_CN>可配置的仅人类视野、移动与开局单位加成。可替代 Sight/Move/Settler 类模组。</zh_Hans_CN>
+      <zh_Hant_HK>可設定的僅人類視野、移動與開局單位加成。可替代 Sight/Move/Settler 類模組。</zh_Hant_HK>
+    </Text>
+    <Text id="LOC_ATM_HSB_MOD_DESCRIPTION">
+      <en_US>Replaces mods like Extra Starting Settler, Sight Enhance, Move +2 (Human Only), and First Settler (+moves/+sight).[NEWLINE]Advanced Setup: sight bonus, movement bonus, and extra starting units (settlers, builders, warriors, scouts).[NEWLINE]Human players only. Unique unit replacements are respected (e.g. Cree Okihtcitaw). Disable the old similar mods or bonuses will stack.</en_US>
+      <ru_RU>Единая замена модов вроде Extra Starting Settler, Sight Enhance, Move +2 (Human Only) и First Settler (+moves/+sight).[NEWLINE]В Advanced Setup настраиваются: бонус обзора, бонус передвижения и доп. юниты на старте (поселенцы, строители, воины, разведчики).[NEWLINE]Действует только на человека. Учитывает уникальные замены цивилизаций (например, Окихчито у Кри). Отключите старые похожие моды, иначе бонусы сложатся.</ru_RU>
+      <zh_Hans_CN>可替代 Extra Starting Settler、Sight Enhance、Move +2（仅人类）、First Settler 等模组。[NEWLINE]高级设置可调：视野、移动，以及开局额外开拓者/建造者/勇士/侦察兵。[NEWLINE]仅对人类生效，并尊重文明特色单位替换（如克里的奥奇奇托）。请关闭旧的同类模组，以免叠加。</zh_Hans_CN>
+      <zh_Hant_HK>可替代 Extra Starting Settler、Sight Enhance、Move +2（僅人類）、First Settler 等模組。[NEWLINE]進階設定可調：視野、移動，以及開局額外開拓者／建造者／勇士／偵察兵。[NEWLINE]僅對人類生效，並尊重文明特色單位替換（如克里的奧奇奇托）。請關閉舊的同類模組，以免疊加。</zh_Hant_HK>
+    </Text>
+    <Text id="LOC_ATM_HSB_MOD_AUTHORS">
+      <en_US>Atom735</en_US>
+      <ru_RU>Atom735</ru_RU>
+      <zh_Hans_CN>Atom735</zh_Hans_CN>
+      <zh_Hant_HK>Atom735</zh_Hant_HK>
+    </Text>
+  </LocalizedText>
+
+  <FrontEndActions>
+    <UpdateDatabase id="ATM_HSB_Config">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>Config/Config.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="ATM_HSB_Text_Frontend">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>Text/Text.sql</File>
+    </UpdateText>
+  </FrontEndActions>
+  <InGameActions>
+    <UpdateDatabase id="ATM_HSB_Data">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>Data/Abilities.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="ATM_HSB_Text_InGame">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>Text/Text.sql</File>
+    </UpdateText>
+    <AddGameplayScripts id="ATM_HSB_Script">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>Scripts/HumanStartBoost.lua</File>
+    </AddGameplayScripts>
+  </InGameActions>
+  <Files>
+    <File>Config/Config.sql</File>
+    <File>Data/Abilities.sql</File>
+    <File>Scripts/HumanStartBoost.lua</File>
+    <File>Text/Text.sql</File>
+  </Files>
+</Mod>
